@@ -21,14 +21,12 @@ ul {
 img {
     display: block;
     width: 100%;
-    height: a;
+    height: auto;
 }
 
 body{
     font-family: Roboto, sans-serif;  
 }
-
-/*----Header----*/
 
 logo {
     color: var(--title-text-color);
@@ -41,13 +39,128 @@ logo {
     text-decoration: none;
 }
 
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+
+/*-----Container-----*/
+
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    }
+
+@media screen and (min-width: 480px) {
+   .container {
+    width: 428px;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+     width:768px;
+     margin-left: auto;
+     margin-right: auto;
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+    .container {
+     width: 1158px;
+     margin-left: auto;
+     margin-right: auto;
+     }
+ }
+
+ /*-----Header-----*/
+
+ .header {
+    padding-top: 24px;
+    padding-bottom: 24px; 
+} 
+
+ .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.header-mobile-menu {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+} 
+
+.icons-menu-color {
+    border: 3px solid #2E2F42;
+} 
+
+.header-logo-web {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+}
+
+.header-logo { 
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #2E2F42;
+}
+
+.mob-menu-nav { 
+    margin-left: 40px;
+    display: block;
+    gap: 40px;
+}
+
+
+ @media screen and (max-width: 767px) {
+    .header-nav {
+        display: none;
+    } 
+    .contacts {
+        display: none;
+    } 
+}
+
+
+
+/*
+align-items: center;
+
+    */
+
+    /*-----Header
+logo{
+    color: var(--title-text-color);
+} 
+
+.list {
+    list-style: none;}
+
+.link {
+    text-decoration: none;
+}
+
+
+
 
 .header {
     padding-top: 24px;
@@ -59,23 +172,9 @@ logo {
     align-items: center;
 }     
 
-.header-logo { 
-    margin-right: 77px;
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    color: #2E2F42;
-}
 
-.header-logo-web {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    color: #4D5AE5;
-}
+
+
 
 .header-item {
     color: #2E2F42;
@@ -130,17 +229,7 @@ logo {
     color: #4D5AE5;
 }
 
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-}
+
 
 .header-mail,
 .header-tel {
@@ -150,8 +239,9 @@ logo {
     letter-spacing: 0.02em;
     color: #434455;
 }
+-----*/
 
-/*----Main----*/
+/*----Main
 
 .main {
     padding-top: 192px;
@@ -264,6 +354,9 @@ fill:currentColor;
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
+----*/
+
+/*------Product
 
 .product {
     padding-bottom: 120px;
@@ -284,8 +377,10 @@ fill:currentColor;
     display: flex;
     gap: 24px;
 }
+------*/
 
-/*---- TEAM----*/
+
+/*---- TEAM
 
 .team {
     padding-top: 120px;
@@ -368,6 +463,9 @@ fill:currentColor;
     padding-top: 32px;
     padding-bottom: 32px;
 }
+----*/
+
+/*-----Filters
 
 .filters {
     display: flex;
@@ -404,6 +502,9 @@ fill:currentColor;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+-----*/
+
+/*-----Menu
 
 .menu {
     padding: 96px 0 120px;
@@ -415,7 +516,6 @@ fill:currentColor;
     column-gap: 24px;
     row-gap: 48px;
 }
-
 
 .menu-list:hover,
 .menu-list:focus {
@@ -470,8 +570,9 @@ fill:currentColor;
     letter-spacing: 0.02em;
     color: #434455; 
 }
+-----*/
 
-/*----Customers----*/
+/*----Customers
 
 .customers {
     padding-top: 130px;
@@ -524,8 +625,9 @@ color: var(--second-title-color);;
     border: 1px solid #404BBF;
     color: #404BBF;
 }
+----*/
 
-/*----Foooter----*/
+/*----Foooter
 
 .footer {
     padding: 100px 0;
@@ -690,7 +792,9 @@ justify-content: flex-end;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms linear, visibility 250ms linear;
 }   
-/*-----Modal-----*/
+----*/
+
+/*-----Modal
 
  .modal {
     position: absolute;
@@ -746,8 +850,9 @@ justify-content: flex-end;
     visibility: hidden;
     pointer-events: none;
 }
+-----*/
 
-/*---Modal Form---*/
+/*---Modal Form
 
 .modal-form {
     display: flex;
@@ -788,7 +893,6 @@ color: #2E2F42;
     display: block;
     position: relative;
 }
-
 
 .modal-form-input {
     outline: none;
@@ -842,7 +946,6 @@ color: #2E2F42;
     outline: none;
     border: 1px solid #4D5AE5;  
 }  
-
 
 .modal-form-check-deck {
     display: flex;
@@ -909,6 +1012,7 @@ color: #2E2F42;
     cursor: pointer;
     transition: background var(--transition), box-shadow var(--transition);
     }
+---*/
 
 
    
