@@ -1,7 +1,49 @@
 @media screen and (min-width: 1200px) {
     .container {
      width: 1158px;
-     margin-left: auto;
-     margin-right: auto;
      }
+
+    /*-----About-----*/
+
+    .about {
+        padding-top: 120px;
+        padding-bottom:  120px;
+        display: flex;
+    }
+    
+    .about-link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F4F4FD;
+        border-radius: 4px;
+        color: #2E2F42;
+        transition: color var(--transition), border var(--transition);
+    }
+    
+    .about-icon {
+    fill:currentColor;
+    }
+    
+    .about-link:hover,
+    .about-link:focus {
+        border: 1px solid #404BBF;
+        color: #404BBF;
+    }
+    
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .customers-item {
+        width: calc((100% - 120px) / 6);
+    }
  }
