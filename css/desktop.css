@@ -10,7 +10,7 @@
         padding-bottom:  120px;
         display: flex;
     }
-    
+
     .about-link {
         width: 100%;
         height: 100%;
@@ -33,6 +33,9 @@
         color: #404BBF;
     }
     
+    .about-title {
+        text-align: ,
+    }
 
     .team {
         padding-top: 120px;
