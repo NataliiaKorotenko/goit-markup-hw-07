@@ -3,6 +3,12 @@
      width: 768px;
      }
 
+    
+    .about-list {
+        width: calc((100% - 24px) /2);
+
+    }
+
     .team {
         padding-bottom: 104px;
     }

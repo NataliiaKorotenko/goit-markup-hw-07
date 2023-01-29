@@ -41,8 +41,11 @@
     }
     
     .container {
+        min-width: 280px;
+        max-width: 1440px;
         padding-left: 15px;
         padding-right: 15px;
+        
         align-items: center;
         margin-left: auto;
         margin-right: auto;
@@ -206,7 +209,7 @@
     .about {
         padding-top: 96px;
         padding-bottom: 96px;
-        display: flex;
+        /*display: flex;*/
     }
     
     .about-catalog {

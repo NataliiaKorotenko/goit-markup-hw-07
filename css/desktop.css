@@ -8,7 +8,24 @@
     .about {
         padding-top: 120px;
         padding-bottom:  120px;
-        display: flex;
+        /*display: flex;*/
+    }
+
+        
+    .about-catalog {
+
+        /*display: flex; 
+        flex-wrap: wrap;*/
+        
+        /*
+        column-gap: 24px;
+        justify-content: center;*/
+    }
+
+    .about-list {
+        width: calc((100% - 72px) /4);
+    
+
     }
 
     .about-link {
@@ -34,7 +51,7 @@
     }
     
     .about-title {
-        text-align: ,
+        /*text-align: ,*/
     }
 
     .team {
