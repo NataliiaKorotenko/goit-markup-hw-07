@@ -58,14 +58,30 @@
         padding-top: 24px;
         padding-bottom: 24px;
         border-bottom: 1px solid #E7E9FC;}
+
+    .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        } 
+
+    .header-mobile-menu {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            line-height: 0;
+        } 
+        
+    .icons-menu-color {
+            border: 3px solid #2E2F42;
+        } 
     
-    .header-container { 
+    /*.header-container { 
         display: flex;
         align-items: center;
-    }     
+    }     */
     
     .header-logo { 
-        margin-right: 77px;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 18px;
@@ -81,7 +97,16 @@
         letter-spacing: 0.03em;
         color: #4D5AE5;
     }
-    
+
+    .header-item {
+        display: none;
+    } 
+
+    .contacts {
+        display: none;
+    }
+
+    /*
     .header-item {
         color: #2E2F42;
     } 
@@ -124,6 +149,7 @@
         border-radius: 2px;
          
     }
+
     .contacts {
         display: flex;
         align-items: center;
@@ -133,7 +159,7 @@
     .header-link:hover,
     .header-link:focus { 
         color: #4D5AE5;
-    }
+    }*/
     
     .visually-hidden {
         border: 0;
@@ -147,22 +173,15 @@
         white-space: nowrap;
     }
     
-    .header-mail,
-    .header-tel {
-        font-family: 'Roboto';
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
+
     
     
     /*----Main----*/
     
     .main {
-        padding-top: 192px;
-        padding-bottom: 192px;
-        min-width: 1440px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        /*min-width: 1440px;*/
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/hero\ image.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -170,16 +189,16 @@
     }
     
     .main-title {
-        width: 496px;
+        width: 318px;
         text-align: center;
         font-family: 'Roboto';
-        font-weight: 600;
-        font-size: 56px;
-        line-height: 1.07;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
         letter-spacing: 0.02em;
         color: var(--first-title-color);
         margin: 0 auto;
-        margin-bottom: 48px;
+        margin-bottom: 72px;
     }
     
     .main-btn {
@@ -189,9 +208,9 @@
         padding: 16px 32px;
         min-width: 106px;
         font-family: 'Roboto';
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
-        line-height: 1.9;
+        line-height: 1.5;
         letter-spacing: 0.04em;
         color: #FFFFFF;
         background-color: #4D5AE5;
@@ -206,6 +225,8 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
     
+    /*-------About-------*/
+
     .about {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -215,29 +236,13 @@
     .about-catalog {
         display: flex; 
         flex-wrap: wrap;
-       /* gap: 72px;*/
-        /*
-        column-gap: 24px;
-        justify-content: center;*/
+        gap: 72px;
     }
     
     .about-list {
         width: 100%;
-        /*display: flex;*/
-        /*
-        flex-wrap: wrap;*/
     }
-    
-    .about-block {
-        /*margin-bottom: 8px;*/
-        display: flex;
-        flex-wrap: wrap;
-        height: 112px;
 
-        /*width: 264px;*/
-        width: 100%;
-    }
-    
     .about-link {
         display: none;
     }
@@ -288,6 +293,7 @@
     }
     
     /*---- TEAM----*/
+
     .team {
         padding-top: 96px;
         padding-bottom: 128px;
@@ -307,7 +313,9 @@
 
     .team-catalog {
         display: flex;
+        flex-wrap: wrap;
         gap: 72px;
+        /*row-gap: 72px;
         /*display: flex;
         flex-wrap: wrap;
         gap: 72px;*/
@@ -511,7 +519,7 @@
     
     .menu-list:hover,
     .menu-list:focus {
-        box-shadow: 0px 1px 6 0 #2E2F42;
+        box-shadow: 0px 1px 6px 0 #2E2F42;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
     
@@ -566,13 +574,13 @@
     /*----Customers----*/
     
     .customers {
-        padding-top: 130px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
         background: var(--first-title-color);
         text-align: center;
     }
     .customers-title {
-        padding-bottom: 72px;
+        margin-bottom: 72px;
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 36px;
@@ -586,13 +594,13 @@
     
     .customers-list {
         display: flex;
-        justify-content: center;
-        gap: 24px;
+        flex-wrap: wrap;
+        gap: 16px;
+        row-gap: 72px;
     }
     
     .customers-item {
-        width: 100%;
-        /*width: calc((100% - 16px) / 2);*/
+        width: calc((100% - 16px) /2);
         height: 88px;
     }
     

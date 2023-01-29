@@ -3,20 +3,47 @@
      width: 1158px;
      }
 
+
+    /*-----Header-----*/
+    .header-mobile-menu {
+            display: none;
+        } 
+    
+    .header-logo { 
+            margin-right: 76px;
+        }
+
+
+    /*------Main------*/
+
+    .main {
+        padding-top: 192px;
+        padding-bottom: 192px;
+        min-width: 1440px;
+    }
+
+    .main-title {
+        width: 494px;
+        font-weight: 700;
+    }
+
     /*-----About-----*/
 
     .about {
         padding-top: 120px;
         padding-bottom:  120px;
     }
-
         
-    .about-catalog {
-        gap: 24px;
-    }
-
     .about-list {
         width: calc((100% - 72px) /4);
+    }
+
+    .about-block {
+        margin-bottom: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 112px;
+        width: 100%;
     }
 
     .about-link {
@@ -34,6 +61,7 @@
     .about-title {
         text-align: left;
         font-weight: 500;
+        line-height: 1.2;
     }
     
     .about-text {
@@ -59,9 +87,17 @@
         padding-bottom: 120px;
     }
 
+    .team-catalog {
+        justify-content: center;    
+            gap: 24px;
+        }
+
     .team-item {
         width: calc((100% - 72px) / 4);
     }
+
+        /*----Customers----*/
+
 
     .customers-item {
         width: calc((100% - 120px) / 6);
