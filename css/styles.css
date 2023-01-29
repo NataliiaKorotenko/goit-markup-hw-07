@@ -215,7 +215,7 @@
     .about-catalog {
         display: flex; 
         flex-wrap: wrap;
-        gap: 72px;
+       /* gap: 72px;*/
         /*
         column-gap: 24px;
         justify-content: center;*/
@@ -246,9 +246,9 @@
     .about-title {
         text-align: center;
         font-family: 'Roboto';
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 1.2;
+        font-weight:700;
+        font-size: 36px;
+        line-height: 1.1;
         letter-spacing: 0.02em;
         color: var(--second-title-color);
         margin-bottom: 8px;
@@ -258,6 +258,7 @@
         width: 100%;
         /*width: 264px;*/
         font-family: 'Roboto';
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;

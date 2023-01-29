@@ -3,9 +3,19 @@
      width: 768px;
      }
 
-    
+
     .about-list {
         width: calc((100% - 24px) /2);
+
+    }
+
+    .about-title {
+        text-align: left;  
+    }
+    
+    .about-text {
+
+        font-weight: 500;
 
     }
 

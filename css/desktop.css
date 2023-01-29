@@ -8,24 +8,15 @@
     .about {
         padding-top: 120px;
         padding-bottom:  120px;
-        /*display: flex;*/
     }
 
         
     .about-catalog {
-
-        /*display: flex; 
-        flex-wrap: wrap;*/
-        
-        /*
-        column-gap: 24px;
-        justify-content: center;*/
+        gap: 24px;
     }
 
     .about-list {
         width: calc((100% - 72px) /4);
-    
-
     }
 
     .about-link {
@@ -38,6 +29,15 @@
         border-radius: 4px;
         color: #2E2F42;
         transition: color var(--transition), border var(--transition);
+    }
+
+    .about-title {
+        text-align: left;
+        font-weight: 500;
+    }
+    
+    .about-text {
+        font-weight: 400;
     }
     
     .about-icon {
