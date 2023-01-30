@@ -12,9 +12,18 @@
     .header-logo { 
             margin-right: 76px;
         }
-
+    
+    .contacts {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }   
 
     /*------Main------*/
+
+    /*.main  > .container {
+        display: flex;
+    }*/
 
     .main {
         padding-top: 192px;
@@ -25,6 +34,7 @@
     .main-title {
         width: 494px;
         font-weight: 700;
+        margin-bottom: 40px;
     }
 
     /*-----About-----*/
@@ -77,14 +87,22 @@
         border: 1px solid #404BBF;
         color: #404BBF;
     }
-    
+
+
     .about-title {
         /*text-align: ,*/
     }
 
+        /*------------TEAM----------*/
+    
+
     .team {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .team > .container {
+        width: 1158px;
     }
 
     .team-catalog {
@@ -102,4 +120,62 @@
     .customers-item {
         width: calc((100% - 120px) / 6);
     }
+
+    /*------------Footer----------*/
+
+
+    .footer > .container {
+        width: 1158;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        /*display: none;
+        margin: 0 auto;*/
+    
+        }
+        
+        .footer-container {
+            margin-bottom: 16px;
+        text-align: left;
+            }
+
+        .footer-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 0;
+            margin: auto;
+        }
+
+        .footer-text {
+            margin: 0;
+            margin-right: 120px;
+            text-align: left;
+        }
+
+        .footer-media{
+        text-align: left;
+        
+        }
+
+        .footer-soc-list {
+            margin-right: 50px;
+            
+        }
+
+        .subscribe-deck {
+        text-align: left;
+        }
+
+        .subscribe{
+    justify-content: flex-end;
+        }
+
+        .subscribe-input {
+
+        margin-right: 24px;
+
+    }
+
  }

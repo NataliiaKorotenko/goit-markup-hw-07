@@ -78,6 +78,11 @@
     }
 
 
+     /*----Main----*/
+
+     .main-title {
+        margin-bottom: 40px;
+    }
 
      /*--------ABOUT---------*/
 
@@ -104,7 +109,7 @@
     }
 
     .team > .container {
-        width: 480px;
+        width: 552px;
     }
 
    .team-catalog {
@@ -132,7 +137,19 @@
     width: calc((100% - 48px) /3);
 }
 
+/*------------Footer----------*/
 
+.footer-container > .container{
+   display: none;
 
  }
 
+ .footer-catalog {
+
+    display: calc((100% - 24px) / 2);
+    flex-wrap: wrap;
+
+}
+
+
+}
