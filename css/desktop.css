@@ -29,6 +29,8 @@
         padding-top: 192px;
         padding-bottom: 192px;
         min-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)), url(../image/hero\ image.jpg);
     }
 
     .main-title {
@@ -93,6 +95,30 @@
         /*text-align: ,*/
     }
 
+
+    
+    /*------Product------*/
+    
+    .product {
+        display: contents;
+        padding-bottom: 120px;
+    } 
+    
+    .product-title {
+        text-align: center;
+        margin-bottom: 72px;
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--second-title-color);
+    }
+    
+    .product-catalog {
+        display: flex;
+        gap: 24px;
+    }
         /*------------TEAM----------*/
     
 
@@ -123,32 +149,39 @@
 
     /*------------Footer----------*/
 
+    .footer {
+    }
 
     .footer > .container {
-        width: 1158;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
+        width: 1158px;
         /*display: none;
         margin: 0 auto;*/
     
         }
         
         .footer-container {
-            margin-bottom: 16px;
+        width: 264px;
+        margin-bottom: 16px;
         text-align: left;
             }
 
         .footer-catalog {
             display: flex;
-            flex-wrap: wrap;
+            width: none;
+            /*flex-wrap: wrap;
             flex-direction: row;
-            gap: 0;
-            margin: auto;
+            gap: 0;*/
+
+            margin: 0;
         }
 
+        .footer-item {
+            display: block;;
+            margin-bottom: 0;
+            }
+
         .footer-text {
+            max-width: 264px;
             margin: 0;
             margin-right: 120px;
             text-align: left;
@@ -160,20 +193,32 @@
         }
 
         .footer-soc-list {
-            margin-right: 50px;
+            width: 208px;
+            margin-right: 0;
+            gap: 16px;
             
         }
 
-        .subscribe-deck {
-        text-align: left;
-        }
-
         .subscribe{
-    justify-content: flex-end;
+        padding: 0;
+        display: block;
+        width: 453px;
+  
         }
 
-        .subscribe-input {
+        .subscribe-deck {
+            text-align: left;
+        }
 
+        .subscribe-item {
+            display: block;
+            gap: 0;
+            margin: 0, auto;
+    
+        }
+        .subscribe-input {
+        width: 261px;
+    
         margin-right: 24px;
 
     }

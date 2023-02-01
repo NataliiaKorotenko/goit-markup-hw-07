@@ -80,7 +80,17 @@
 
      /*----Main----*/
 
+
+    .main {
+        /*padding-top: 192px;
+        padding-bottom: 192px;
+        min-width: 1440px;*/
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)), url(../image/hero\ image\ tab.jpg);
+    }
      .main-title {
+        width: 494px;
+        height: 120px;
         margin-bottom: 40px;
     }
 
@@ -138,18 +148,52 @@
 }
 
 /*------------Footer----------*/
+.footer > .container {
+    width: 768px;
+    /*display: none;
+    margin: 0 auto;*/
 
-.footer-container > .container{
-   display: none;
+    }
 
- }
-
- .footer-catalog {
-
-    display: calc((100% - 24px) / 2);
+.footer-catalog {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-
+   justify-content: space-between;    
+    gap: 24px;
+    row-gap: 72px;
+    text-align: left;
+}
+ .footer-item {
+    width: calc((100% - 24px) / 2);
+    margin: 0;
 }
 
+.footer-text {
+    margin: 0;
+    text-align: left;
+    width: 264px;
+}
+.footer-soc-list {
+    justify-content: left;
+    
+}
+
+.subscribe{
+text-align: left;
+width: 453px;
+margin: 0;
+justify-content: left;
+}
+
+.subscribe-item {
+    flex-direction: row;
+    gap: 24px;
+    align-items: baseline;
+
+}
+.subscribe-input {
+    width: 264px;
+}
 
 }
