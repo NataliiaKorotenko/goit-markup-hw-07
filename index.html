@@ -51,7 +51,7 @@
         <!--Main-->
     <section class="main">
     <div class="container">
-        <h1 class="main-title">Effective Solutions For Your Business</h1>
+        <h1 class="main-title">Effective Solutions for Your Business</h1>
         <button class="main-btn" type="button" data-modal-open>Order Service</button>
     </div>
     </section>
@@ -123,9 +123,13 @@
         <h2 class="team-title">Our Team</h2>
         <ul class="team-catalog list">
             <li class="team-item">
-                <img src="./image/image_photo_1-x1.jpg"
+                <img
+                src="./image/team1.jpg"
                 alt="Mark Guerrero"
-
+                srcset="
+                ./image/image_photo_1-x1.jpg 1x,
+                ./image/image_photo_1-x2.jpg 2x 
+                "
                  width="264">
             <div class="team-block">
                 <h3 class="team-tit">Mark Guerrero</h3>
@@ -166,7 +170,14 @@
             </div>
             </li>
             <li class="team-item">
-                <img src="./image/team2.jpg" alt="Tom Ford" width="264">
+                <img 
+                src="./image/team2.jpg" 
+                alt="Tom Ford" 
+                srcset="
+                ./image/image_photo_2-x1.jpg 1x,
+                ./image/image_photo_2-x2.jpg 2x 
+                "
+                width="264">
             <div class="team-block">
                 <h3 class="team-tit">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -206,7 +217,14 @@
             </div>
             </li>
             <li class="team-item">
-                <img src="./image/team3.jpg" alt="Camila Garcia" width="264">
+                <img 
+                src="./image/team3.jpg" 
+                alt="Camila Garcia"
+                srcset="
+                ./image/image_photo_3-x1.jpg 1x,
+                ./image/image_photo_3-x2.jpg 2x 
+                " 
+                width="264">
             <div class="team-block">
                 <h3 class="team-tit">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -246,7 +264,14 @@
             </div>
             </li>
             <li class="team-item">
-                <img src="./image/team4.jpg" alt="Daniel Wilson" width="264">
+                <img 
+                src="./image/team4.jpg" 
+                alt="Daniel Wilson" 
+                srcset="
+                ./image/image_photo_4-x1.jpg 1x,
+                ./image/image_photo_4-x2.jpg 2x 
+                "
+                width="264">
             <div class="team-block">
                 <h3 class="team-tit">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -392,7 +417,7 @@
     </footer>
 
     <!--Modal-->
-    
+
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
 <button type="button" class="modal-close-btn" data-modal-close>
@@ -452,7 +477,7 @@
 </div>
 </div>
 
-<!--Modal-menu 
+<!--Modal-menu--> 
 <div class="mobile-menu is-open" mob-menu-container>
     <div class="menu-container">
         <button type="button" class="mob-menu-close-btn" mob-modal-close>
@@ -510,11 +535,11 @@
           </div>
       </div>
     </div>   
-  </div>-->
+  </div>
       
-<script src="./modal.js"></script>
+<script src="./js/modal.js"></script>
 
-<!--<script src="./js/mobile-menu.js"></script>-->
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 

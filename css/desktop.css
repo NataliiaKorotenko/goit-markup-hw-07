@@ -166,8 +166,10 @@
             }
 
         .footer-catalog {
-            display: flex;
-            width: none;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            max-width: 1128 px;
+            justify-content: space-between;
             /*flex-wrap: wrap;
             flex-direction: row;
             gap: 0;*/

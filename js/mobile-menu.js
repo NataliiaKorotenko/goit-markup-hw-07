@@ -20,11 +20,11 @@
       closeMenuBtn. addEventListener('click', toggleMenu);
 
 
-    Закройте мобильное меню на более широких экранах, если изменится ориентация устройства
+    /*Закройте мобильное меню на более широких экранах, если изменится ориентация устройства
     окно. matchMedia('(минимальная ширина: 768px)'). addEventListener('change', e => {
       если (! д. матчи) возврат;
       mobileМеню. классСписок. remove('is-open');
       openMenuBtn. setAttribute('aria-expanded', false);
       bodyScrollLock. enableBodyScroll(документ. тело);
-    });
+    });*/
   })();
