@@ -3,14 +3,13 @@
      width: 428px;
      }
 
- }
+
 
 
  .main-title {
     width: 318px;
 }
 
-/*------mobal-mobiene-----*
 
 .menu-container {
     position: absolute;
@@ -92,3 +91,4 @@
     justify-content: center;
     gap: 56px;
 }
+ }
