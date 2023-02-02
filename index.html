@@ -37,7 +37,7 @@
                 <li class="header-mail"><a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="header-tel"><a class="header-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
-            <button type="button" class="header-mobile-menu" js-open-menu>  
+            <button type="button" class="header-mobile-menu" js-open-menu aria-label="menu" aria-expanded="false" aria-controls="mobile-menu">  
             <svg class="icons-menu" width="29.54px" height="18.62px">
               <use class="icons-menu-color" href="./image/icons.svg#menu_btn"></use>
             </svg>
@@ -479,7 +479,7 @@
 
 <!--Modal-menu--> 
 
-<div class="mobile-menu is-open" js-menu-container>
+<div class="mobile-menu is-open" js-menu-container id="mobile-menu">
     <div class="menu-container">
         <button type="button" class="mob-menu-close-btn" js-close-menu>
             <svg class="mob-menu-close-btn-icon" width="8" height="8">
@@ -540,7 +540,7 @@
       
 <script src="./js/modal.js"></script>
 
-<script src="./js/mobile-menu.js"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 
 

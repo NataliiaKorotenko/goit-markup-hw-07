@@ -21,10 +21,6 @@
 
     /*------Main------*/
 
-    /*.main  > .container {
-        display: flex;
-    }*/
-
     .main {
         padding-top: 192px;
         padding-bottom: 192px;
@@ -166,14 +162,14 @@
             }
 
         .footer-catalog {
-            flex-direction: row;
+            display: flex;
             flex-wrap: nowrap;
-            max-width: 1128 px;
-            justify-content: space-between;
+            justify-content: none;
+            padding: 0;
             /*flex-wrap: wrap;
             flex-direction: row;
             gap: 0;*/
-
+            gap: 0;
             margin: 0;
         }
 
@@ -183,7 +179,6 @@
             }
 
         .footer-text {
-            max-width: 264px;
             margin: 0;
             margin-right: 120px;
             text-align: left;
@@ -195,16 +190,14 @@
         }
 
         .footer-soc-list {
-            width: 208px;
-            margin-right: 0;
             gap: 16px;
+            margin-right: 80px;
             
         }
 
         .subscribe{
         padding: 0;
         display: block;
-        width: 453px;
   
         }
 
@@ -213,14 +206,12 @@
         }
 
         .subscribe-item {
-            display: block;
             gap: 0;
             margin: 0, auto;
     
         }
         .subscribe-input {
-        width: 261px;
-    
+        max-width: 264px;
         margin-right: 24px;
 
     }
