@@ -124,10 +124,8 @@
     /*----Main----*/
     
     .main {
-        padding: 112px 56px 112px 54px;
-        /*padding-top: 112px;
+        padding-top: 112px;
         padding-bottom: 112px;
-        padding-left: 54px;*/
         margin: 0 auto;
         /*min-width: 1440px;*/
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -144,7 +142,7 @@
     }*/
     
     .main-title {
-        width: 318px;
+        width: 100%;
         height: 80px;
         text-align: center;
         font-family: 'Roboto';
@@ -592,8 +590,6 @@
     }
     
     .subscribe{
-        display: flex;
-       /* flex-wrap: wrap;*/
         justify-content: center;
     }
     
@@ -622,7 +618,7 @@
         margin-bottom: 16px;
         padding-left: 16px;
     
-        width: 396px;
+        min-width: 100%;
         height: 40px;
     
         color: rgba(255, 255, 255, 0.6);
