@@ -124,6 +124,7 @@
     /*----Main----*/
     
     .main {
+        display: block;
         padding-top: 112px;
         padding-bottom: 112px;
         margin: 0, auto;
@@ -144,7 +145,6 @@
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: var(--first-title-color);
-        margin: 0, auto;
         margin-bottom: 72px;
     }
     
@@ -886,4 +886,96 @@
         transition: background var(--transition), box-shadow var(--transition);
         }
     
+        /*------Mob-menu-------*/
 
+.menu-mob-container {
+    position: absolute;
+    width: 428px;
+    height: 796px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+} 
+
+
+.mob-menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: #000;
+    background-color: #E7E9FC;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    }
+
+.mob-menu-nav { 
+    margin-left: 40px;
+    margin-top: 80px;
+    margin-bottom: 284px;
+    display: block;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+
+.mob-menu {
+    margin-bottom: 48px;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11; 
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    transition: color var(--transition);
+    padding-left: 40px;
+
+
+}
+
+.mob-menu-item { 
+    width: 337px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;  
+    text-align: center;
+    color: #4D5AE5;
+    margin-bottom: 40px;
+}
+
+
+.mob-menu-item-mail { 
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: #434455;
+}
+
+.mob-menu-icon {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
+.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
