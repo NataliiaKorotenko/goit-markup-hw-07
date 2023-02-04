@@ -1,4 +1,18 @@
 (() => {
+
+  const refs = {
+    openModalBtn: document.querySelector("[js-open-menu]"),
+    closeModalBtn: document.querySelector("[js-close-menu]"),
+    modal: document.querySelector("[js-menu-container]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-open");
+  }
+  /*
   const mobileMenu = document.querySelector(".js-menu-container");
   const openMenuBtn = document.querySelector(".js-open-menu");
   const closeMenuBtn = document.querySelector(".js-close-menu");
@@ -25,5 +39,5 @@
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);
     bodyScrollLock.enableBodyScroll(document.body);
-  });
+  });*/
 })();

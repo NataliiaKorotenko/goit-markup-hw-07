@@ -134,10 +134,11 @@
     }
 
     .main-title {
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         font-family: 'Roboto';
-        font-weight: 600;
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
@@ -977,6 +978,10 @@
 
 }
 
+.mob-menu:hover {
+   color: #404BBF;
+}
+
 .mob-menu-item { 
     min-width: 337px;
     font-family: 'Roboto';
@@ -997,6 +1002,10 @@
 
     color: #434455;
 }
+
+.mob-menu-item-mail:hover {
+    color: #404BBF;
+ }
 
 .mob-menu-icon {
     display: flex;

@@ -24,14 +24,13 @@
     .main {
         padding-top: 192px;
         padding-bottom: 192px;
-        min-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)), url(../image/hero\ image.jpg);
     }
 
     .main-title {
-        /*width: 494px;*/
-        margin-bottom: 40px;
+        margin-bottom: 48px;
+        
     }
 
     /*-----About-----*/
