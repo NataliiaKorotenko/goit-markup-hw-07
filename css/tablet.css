@@ -43,6 +43,14 @@
         color: #2E2F42;
         transition: color var(--transition);
     }
+
+    .header-link-c {
+        font-family: 'Roboto';
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
     
     .header-link.current::after {
         content: "";
@@ -56,11 +64,22 @@
          
     }
 
+        
+    .header-mail {
+        font-family: 'Roboto';
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+
+    }
+    
+
     .contacts {
         display: block;
         justify-content: flex-end;
         /*align-items: center;*/
         row-gap: 40px;
+
     }   
     
     .header-link:hover,
@@ -68,14 +87,7 @@
         color: #4D5AE5;
     }
 
-    .header-mail,
-    .header-tel {
-        font-family: 'Roboto';
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
+
 
 
      /*----Main----*/
@@ -114,6 +126,18 @@
 
     }
 
+    /*------Product------*/
+
+    .product {
+        display: none;
+        padding-bottom: 96px;
+    } 
+
+    .product-catalog {
+
+        padding-bottom: 96px;
+    } 
+
     /*------------TEAM----------*/
     .team {
         padding-bottom: 104px;
@@ -137,12 +161,16 @@
 
     .customers {
     padding-top: 120px;
-    padding-bottom: 120px;
-}
+    padding-bottom: 120px;   
+    }
 
-.customers-list {
+    .customers > .container {
+        width: 552px;
+    }
+
+    .customers-list {
     gap: 24px;
-}
+    }
 
     .customers-item {
     width: calc((100% - 48px) /3);
@@ -150,7 +178,7 @@
 
 /*------------Footer----------*/
 .footer > .container {
-    width: 768px;
+    width: 552px;
     /*display: none;
     margin: 0 auto;*/
 
@@ -192,6 +220,7 @@ width: 264px;
 
 }
 .subscribe-input {
+    min-width: 100%;
 
 }
 
