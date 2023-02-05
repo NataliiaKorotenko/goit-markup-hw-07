@@ -224,4 +224,7 @@ width: 264px;
 
 }
 
+.mobile-menu { 
+    display: none;
+}
 }
