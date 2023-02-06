@@ -889,7 +889,7 @@
 
     transform: translateX(100%);
     opacity: 0;
-    
+    visibility: hidden;
     transition-property: transform, opacity;
     
     transition-duration: 500ms;
@@ -904,7 +904,25 @@
 .mobile-menu.is-open {
     transform: translateX(0);
     opacity: 1;
+    visibility: visible;
 }
+
+/*.visually-open {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.is-open {
+    pointer-events: none;
+}*/
+
 
 .menu-mob-container {
     position: absolute;
